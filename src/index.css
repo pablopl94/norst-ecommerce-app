@@ -114,17 +114,16 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme {
+  --font-sans: "Open Sans", sans-serif;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
 
   body {
-    font-family: var(--font-montserrat);
-    @apply bg-background text-foreground;
+    @apply font-sans bg-background text-foreground;
   }
-}
-
-@theme {
-  --font-montserrat: "Montserrat Alternates", sans-serif;
 }
